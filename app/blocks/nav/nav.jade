@@ -1,0 +1,11 @@
+mixin nav(data)
+	+b('nav').nav&attributes(attributes)
+		+e.contacts
+			+e('span').city г. Санкт-Петербург
+			+e('span').tel т. (812) 329-79-85
+		+e('ul').menu
+			each item in data
+				+e('li').item
+					a(href='#') #{item}
+
+

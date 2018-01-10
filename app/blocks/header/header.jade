@@ -1,0 +1,6 @@
+include ../nav/nav
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+e('img').img(src='assets/images/header.png')
+		+nav(getData('menu'))
