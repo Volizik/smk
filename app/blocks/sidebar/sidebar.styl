@@ -1,2 +1,51 @@
 .sidebar
 	display block
+	width 240px
+	&__gallery
+		position relative
+		z-index 1
+		margin-left auto
+		overflow hidden
+		width 225px
+		height calc(100% + 60px)
+		background-color #e2e2e2
+		border 1px solid #888
+		border-radius 0 0 20px 20px
+		box-shadow 0 0 0 2px #fff, 2px 2px 10px #888
+	&__title
+		display flex
+		align-items center
+		padding 10px 0
+		background linear-gradient(to bottom, #888888 1%, #aaaaaa 20%, #eeeeee 77%, #ffffff 100%)
+		border-bottom 1px solid #888
+		&-icon
+			margin-right 10px
+			display block
+			width 50px
+			height 50px
+			object-fit cover
+		&-text
+			font-family Tahoma, Verdana, Arial
+			font-size 10px
+			font-weight 700
+			color #297bac
+	&__list
+		padding 10px
+		li
+			padding-bottom 10px
+			display flex
+			&:before
+				margin 5px
+				size(6px)
+				display block
+				content ''
+				background-color #032259
+				border-radius 50%
+		a
+			font-family Tahoma, Verdana, Arial
+			font-size 11px
+			font-weight 700
+			color #032259
+			&:hover
+				color #297bac
+

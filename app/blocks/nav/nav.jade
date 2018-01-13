@@ -6,6 +6,6 @@ mixin nav(data)
 		+e('ul').menu
 			each item in data
 				+e('li').item
-					a(href='#') #{item}
+					a(href='#{item.link}') #{item.name}
 
 

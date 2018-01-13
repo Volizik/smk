@@ -1,3 +1,10 @@
-mixin footer()
-	+b.footer&attributes(attributes)
-		block
+mixin footer(data)
+	+b('footer').footer&attributes(attributes)
+		+e('nav').nav
+			+e('ul').list
+				each item in data
+					+e('li').item
+						a(href='#') #{item}
+		+e.bottom
+			span ©2000-2018 ООО "СМК: Слесарно-Механическая Компания"
+			span Металлообработка. Качество в деталях.

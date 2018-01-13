@@ -1,0 +1,12 @@
+extends /blocks/layout-default/layout-default
+include /blocks/section/section
+include /blocks/title/title
+include /blocks/framed-img/framed-img
+
+block head
+    - var pageTitle = 'Производство';
+
+block content
+    +e('h1').title
+        | УСЛУГИ МЕТАЛЛООБРАБОТКИ, ПРЕДОСТАВЛЯЕМЫЕ ООО "СМК"
+    +section()

@@ -14,8 +14,8 @@ html(lang='ru')
 	+page
 		+container
 			+header
-			+sidebar
+			+sidebar(getData('gallery'))
 			+main
 				block content
-			+footer
+			+footer(getData('services'))
 		+scripts(['app.min.js'])

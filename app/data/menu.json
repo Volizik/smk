@@ -1,3 +1,22 @@
 [
-  "главная", "о компании", "производство", "вакансии", "контакты"
+  {
+    "name": "главная",
+    "link": "index.html"
+  },
+  {
+    "name": "о компании",
+    "link": "about.html"
+  },
+  {
+    "name": "производство",
+    "link": "production.html"
+  },
+  {
+    "name": "вакансии",
+    "link": "vacancies.html"
+  },
+  {
+    "name": "контакты",
+    "link": "contacts.html"
+  }
 ]
