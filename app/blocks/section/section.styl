@@ -10,9 +10,17 @@
 		overflow hidden
 		width 100%
 		content ''
-	.framed-img
-		float left
-	&__text
+	&__row
+		padding-bottom 10px
+		display flex
+		flex-direction row
+		justify-content space-between
+		&--reverse
+			flex-direction row-reverse
+			.framed-img
+				margin-right 0
+				margin-left 10px
+	&__paragraph
 		margin-bottom 10px
 		font-family Tahoma, Verdana, Arial
 		font-size 11px
@@ -58,3 +66,22 @@
 		&-bottom
 			left  1000px
 			bottom 10px
+	&__list-title
+		font-family Tahoma, Verdana, Arial
+		font-size 11px
+		font-weight 700
+		color #000
+	&__list-item
+		padding-top 3px
+		font-family Tahoma, Verdana, Arial
+		font-size 11px
+		font-weight 400
+		line-height 13px
+		color #000
+		b
+			padding-right 3px
+			font-weight 700
+		&:before
+			padding-x(5px)
+			display inline-block
+			content '-'
