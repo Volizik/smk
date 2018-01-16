@@ -1,0 +1,21 @@
+extends /blocks/layout-default/layout-default
+include /blocks/section/section
+include /blocks/framed-img/framed-img
+
+block head
+    - var pageTitle = 'Контакты';
+
+block content
+    +e('h1').title
+        | СПАСИБО ЗА ПРОЯВЛЕННЫЙ ИНТЕРЕС К НАШЕЙ КОМПАНИИ!
+    +section()
+        +e('p').paragraph
+            | Токарные работы в зависимости от сложности и заказываемой партии распределяется на три участка: с универсальным оборудованием, для автоматов продольного точения, на станки с ЧПУ HAAS. Имеющиеся возможности токарной обработки подробно описаны в разделе "Токарно-фрезерная обработка". Предлагаем Вашему вниманию несколько фотографий, как пример изготовления на универсальном токарном оборудовании.
+    +section()
+        +e.gallery
+            +framed-img('assets/images/about1.png')
+            +framed-img('assets/images/about2.png')
+            +framed-img('assets/images/about3.png')
+            +framed-img('assets/images/about3.png')
+            +framed-img('assets/images/about1.png')
+            +framed-img('assets/images/about2.png')
